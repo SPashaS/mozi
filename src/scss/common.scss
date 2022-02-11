@@ -1,0 +1,23 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+    font-size: rem(16);
+    line-height: math.div(24, 16);
+    letter-spacing: 0.005em;
+    padding: rem(14) rem(32);
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid $redColor;
+    color: $redColor;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease 0s;
+    &_bg-red {
+        color: #fff;
+        background-color: $redColor;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 0 10px rgba(209, 0, 0, 0.795);
+        }
+    }
+}
