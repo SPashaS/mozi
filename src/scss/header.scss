@@ -1,7 +1,13 @@
 //====================================================================================================
 .header {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
 	// .header__container
 	&__container {
+		min-width: rem(300);
 		min-height: rem(100);
 		display: flex;
 		justify-content: space-between;
