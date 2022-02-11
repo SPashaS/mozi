@@ -1,0 +1,49 @@
+.section {
+
+    // .section__brands
+
+    &__brands {
+    }
+}
+.brands {
+    @include adaptiveValue("padding-top",100,40);
+    @include adaptiveValue("padding-bottom",130,30);
+    // .brands__container
+    &__container {
+    }
+
+    // .brands__title
+
+    &__title {
+        @include adaptiveValue("font-size",36, 30);
+        @include adaptiveValue("line-heigh",1.37,1);
+        @include adaptiveValue("margin-bottom",80,25);
+
+    }
+
+    // .brands__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        @include adaptiveValue("column-gap",50,20);
+        row-gap: rem(20);
+        flex-wrap: wrap;
+    }
+
+    // .brands__item
+
+    &__item {
+    }
+
+    // .brands__link
+
+    &__link {
+    }
+
+    // .brands__image
+
+    &__image {
+    }
+}
+

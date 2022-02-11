@@ -23,3 +23,14 @@
         }
     }
 }
+
+.title {
+    font-weight: 700;
+    font-size: rem(44);
+    line-height: math.div(57,44);
+    color: $blueColor;
+    text-align: center;
+    span {
+        color: $redColor;
+    }
+}
