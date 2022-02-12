@@ -506,7 +506,7 @@ export function showMore() {
 					if (index == showMoreTypeValue) break
 				}
 			} else {
-				const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 150;
+				const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 0;
 				hiddenHeight = showMoreTypeValue;
 			}
 			return hiddenHeight;
@@ -533,9 +533,10 @@ export function showMore() {
 						showMoreBlock.classList.toggle('_showmore-active');
 					}
 				}
-			} else if (targetType === 'resize') {
-				showMoreBlocksRegular && showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
-				mdQueriesArray && mdQueriesArray.length ? initItemsMedia(mdQueriesArray) : null;
+			
+			// } else if (targetType === 'resize') {
+			// 	showMoreBlocksRegular && showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
+			// 	mdQueriesArray && mdQueriesArray.length ? initItemsMedia(mdQueriesArray) : null;
 			}
 		}
 	});
