@@ -1,27 +1,26 @@
 //====================================================================================================
-.page {
-    // .page__hero
+.home {
+    // .home__hero
     &__hero {
     }
 
-    // .page__info
+    // .home__info
     &__info {
     }
-
-    // .page__innovation
-
+    // .home__line-products
+    &__line-products {
+    }
+    // .home__innovation
     &__innovation {
+    }
+
+    // .home__join-block
+    &__join-block {
     }
 }
 
 //====================================================================================================
 
-.page {
-
-    // .page__line-products
-    &__line-products {
-    }
-}
 .line-products {
     border-top: 1px solid rgba(197, 203, 226, 0.5);
     @include adaptiveValue("padding-top",105,30);
@@ -34,6 +33,7 @@
     // .line-products__title
 
     &__title {
+        text-align: center;
     }
 
     // .line-products__subtitle
@@ -243,6 +243,7 @@
     // .innovation__title
 
     &__title {
+        text-align: center;
         &:not(:last-child) {
             margin-bottom: rem(16);
         }
@@ -302,9 +303,41 @@
 
     }
 }
-
-
 //====================================================================================================
+
+.join-block {
+    .block {
+        background: linear-gradient(335.73deg, #E3E7F6 12.46%, rgba(227, 231, 246, 0) 84.19%);
+
+        // .block__content
+        &__content {
+            flex: 0 1 rem(363);
+            @include adaptiveValue("padding-top",229,50);
+            @include adaptiveValue("padding-bottom",596,350);
+            @media (min-width:$tablet){
+                padding-bottom: rem(210);
+            }
+        }
+    
+        // .block__img
+        &__img {
+            img {
+                width: rem(523);
+                @include adaptiveValue("width",523,300);
+                bottom: 50%;
+                transform: translateY(50%);
+                left: -1%;
+                @media (max-width:$tablet){
+                    left: 50%;
+                    transform: translate(-50%, -10%);
+                }
+            }
+        }
+    }
+}
+
+
+
 //====================================================================================================
 //====================================================================================================
 //====================================================================================================

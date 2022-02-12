@@ -8,10 +8,10 @@
     // .brands__title
 
     &__title {
+        text-align: center;
         @include adaptiveValue("font-size",36, 30);
         @include adaptiveValue("line-heigh",1.37,1);
         @include adaptiveValue("margin-bottom",80,25);
-
     }
 
     // .brands__list
