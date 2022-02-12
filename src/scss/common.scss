@@ -26,7 +26,7 @@
 
 .title {
     font-weight: 700;
-    font-size: rem(44);
+    @include adaptiveValue("font-size",44,28);
     line-height: math.div(57,44);
     color: $blueColor;
     text-align: center;
