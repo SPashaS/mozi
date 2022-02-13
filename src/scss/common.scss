@@ -11,7 +11,7 @@
     border: 1px solid $redColor;
     color: $redColor;
     cursor: pointer;
-    transition: box-shadow 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     &--bg-red {
         color: #fff;
         background-color: $redColor;
@@ -19,7 +19,8 @@
 
     @media (any-hover: hover) {
         &:hover {
-            box-shadow: 0 0 10px rgba(209, 0, 0, 0.795);
+            background-color: #e90537;
+            color: #fff;
         }
     }
 }

@@ -26,12 +26,20 @@
     }
 
     // .brands__item
-
     &__item {
     }
 
     // .brands__link
-
     &__link {
+        svg {
+            width: 100%;
+            fill: #8F90A6;
+            transition: fill 0.3s ease 0s;
+        }
+        &:hover {
+            svg {
+                fill: $blueColor;
+            }
+        }
     }
 }

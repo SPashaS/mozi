@@ -131,6 +131,13 @@
         display: flex;
         align-items: center;
         gap: rem(8);
+        &::before {
+            transition: transform 0.3s ease 0s;
+            ._showmore-active & { 
+                transform: rotate(-90deg);
+            }
+            
+        }
     }
 
 	// .card__bg-ibg
@@ -163,6 +170,37 @@
 //====================================================================================================
 
 
+.info-block {
+    .block {
+        background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+
+        // .block__content
+        &__content {
+            flex: 0 1 rem(430);
+            @include adaptiveValue("padding-top",229,50);
+            @include adaptiveValue("padding-bottom",596,350);
+            @media (min-width:$tablet){
+                padding-bottom: rem(210);
+            }
+        }
+    
+        // .block__img
+        &__img {
+            img {
+                width: rem(559);
+                @include adaptiveValue("width",559,300);
+                bottom: 50%;
+                transform: translateY(50%);
+                left: -1%;
+                @media (max-width:$tablet){
+                    left: 50%;
+                    transform: translate(-50%, -10%);
+                }
+            }
+        }
+    }
+}
+//====================================================================================================
 .info {
     background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
     @include adaptiveValue("padding-top",80,30);
