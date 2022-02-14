@@ -1,0 +1,48 @@
+.prod-hero-block {
+    .block {
+
+        // .block__container
+    
+        &__container {
+        }
+    
+        // .block__content
+    
+        &__content {
+            flex: 0 1 rem(523);
+        }
+    
+        // .block__title
+    
+        &__title {
+        }
+    
+        // .block__text
+    
+        &__text {
+            max-width: rem(444);
+            
+        }
+    
+        // .block__img
+    
+        &__img {
+            position: relative;
+            flex: 0 1 50%;
+            img {
+                position: absolute;
+                width: rem(672);
+                @include adaptiveValue("width",672,330);
+                bottom: 0;
+                left: -24%;
+                @media (max-width:$tablet){
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+

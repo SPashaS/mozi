@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Products"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page_products products">
+				<section class="products__hero-block prod-hero-block block">
+					<div class="block__container">
+						<div class="block__content">
+							<h1 class="block__title title">Tools that transform how businesses work</h1>
+							<p class="block__text">We help manage businesses better with our applications, plugins, 
+								extensions and offer productive experiences for teams and customers alike.</p>
+						</div>
+						<div class="block__img">
+							<img src="@img/products/hero.svg" alt="Illustration">
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
