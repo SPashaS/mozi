@@ -1,48 +1,207 @@
+.page {
+
+    // .page_products
+    &_products {
+    }
+}
+//====================================================================================================
+
+.products {
+    // .products__hero-block
+    &__hero-block {
+    }
+    // .products__about
+    &__about {
+    }
+}
+//====================================================================================================
+
 .prod-hero-block {
     .block {
-
-        // .block__container
-    
-        &__container {
-        }
-    
+        background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
         // .block__content
-    
         &__content {
-            flex: 0 1 rem(523);
+            flex-basis: rem(523);
         }
-    
-        // .block__title
-    
-        &__title {
-        }
-    
         // .block__text
-    
         &__text {
             max-width: rem(444);
-            
+            @media (max-width:$tablet){
+                max-width: 100%;
+            }
         }
-    
         // .block__img
-    
         &__img {
-            position: relative;
-            flex: 0 1 50%;
             img {
-                position: absolute;
                 width: rem(672);
                 @include adaptiveValue("width",672,330);
-                bottom: 0;
-                left: -24%;
-                @media (max-width:$tablet){
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
             }
         }
     }
 }
+//====================================================================================================
+.info-products {
+    @include adaptiveValue("padding-top",100,30);
+    @include adaptiveValue("padding-bottom",80,30);
+    // .info-products__item
+
+    &__item {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom",110,50);
+        }
+    }
+}
+.info-products-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(15);
+    @media (max-width:$tablet){
+        flex-wrap: wrap;
+    }
+    // .info-products-item__decs
+    &__decs {
+    }
+    // .info-products-item__logo
+    &__logo {
+        margin-bottom: rem(40);
+    }
+    // .info-products-item__text
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+    // .info-products-item__image
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    //////////////////////////////////// .info-products-item_1
+    &_1 {
+        padding-right: rem(14);
+        @media (max-width:$tablet){
+            justify-content: center;
+            padding: 0;
+        }
+        // .info-products-item__decs
+        .info-products-item__decs {
+            flex: 0 1 rem(419);
+            @media (max-width:$tablet){
+                flex-basis: 100%;
+            }
+        }
+        // .info-products-item__logo
+        .info-products-item__logo {
+            width: rem(240);
+            height: rem(46);
+        }
+        // .info-products-item__text
+        // .info-products-item__image
+        .info-products-item__image {
+            flex: 0 1 rem(564);
+            @media (max-width:$tablet){
+                @include adaptiveValue("flex-basis",400,300,992,320,1);
+            }
+        }
+    }
+    ///////////////////////////////////// .info-products-item_2
+    &_2 {
+        padding-left: rem(7);
+        @media (max-width:$tablet){
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            padding: 0;
+        }
+        // .info-products-item__decs
+        .info-products-item__decs {
+            flex: 0 1 rem(470);
+            @media (max-width:$tablet){
+                flex-basis: 100%;
+            }
+        }
+        // .info-products-item__logo
+        .info-products-item__logo {
+            width: rem(252);
+            height: rem(29);
+        }
+        // .info-products-item__image
+        .info-products-item__image {
+            flex: 0 1 rem(511);
+            @media (max-width:$tablet){
+                @include adaptiveValue("flex-basis",400,300,992,320,1);
+            }
+        }
+    }
+}
+
+
+//====================================================================================================
+
+.about-products {
+    background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+    // .about-products__container
+    &__container {
+        
+    }
+    // .about-products__inner
+    &__inner { 
+        max-width: rem(878);
+        @include adaptiveValue("padding-top",135,30);
+        @include adaptiveValue("padding-bottom",135,30);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // .about-products__title
+    &__title {
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    // .about-products__text
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    // .about-products__buttons
+    &__buttons {
+        display: flex;
+        gap: rem(20);
+        @media (max-width:$mobileSmall){
+              flex-direction: column;
+              width: 80%;
+        }
+    }
+}
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
 
 
 
