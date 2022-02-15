@@ -1,0 +1,131 @@
+
+
+.prod-hero-block {
+    .block {
+        background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
+        // .block__content
+        &__content {
+            flex-basis: rem(523);
+        }
+        // .block__text
+        &__text {
+            max-width: rem(444);
+            @media (max-width:$tablet){
+                max-width: 100%;
+            }
+        }
+        // .block__img
+        &__img {
+            img {
+                width: rem(672);
+                @include adaptiveValue("width",672,330);
+            }
+        }
+    }
+}
+.page {
+
+    // .page__about-hero-block
+
+    &__about-hero-block {
+    }
+
+    // .page__brands
+
+    &__brands {
+    }
+}
+.about-hero-block {
+    .block {
+        background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
+        // .block__content
+        &__content {
+            flex-basis: rem(447);
+            @include adaptiveValue("padding-top",360,300,1118,992,1);
+            @include adaptiveValue("padding-bottom",596,320);
+            @media (max-width:$tablet){
+                padding-top: rem(120);
+            }
+            @media (min-width:$tablet){
+                padding-bottom: rem(212);
+            }
+        }
+        // .block__text
+        &__text {
+            max-width: rem(390);
+            @media (max-width:$tablet){
+                max-width: 100%;
+            }
+        }
+        // .block__img
+        &__img {
+            img {
+                width: rem(638);
+                bottom: 2%;
+                @include adaptiveValue("width",638,330);
+            }
+        }
+    }
+}
+
+.brands {
+    // .brands__container
+    &__container {
+    }
+    // .brands__stats
+    &__stats {
+    }
+}
+.stats-brands {
+    @include adaptiveValue("margin-top",145, 30);
+    @include adaptiveValue("padding-left",50,0,1118,480,1);
+    @include adaptiveValue("padding-right",50,0,1118,480,1 );
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+    @include adaptiveValue("gap",32,15);
+}
+.stats-brand {
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: rem(53) 0px 0px 0px;
+    // .stats-brand__value
+    &__value {
+        font-size: rem(56);
+        line-height: math.div(62,56);
+        color: $blueColor;
+    }
+
+    // .stats-brand__desc
+
+    &__desc {
+        font-size: rem(22);
+        line-height: math.div(33,22);
+    }
+
+    // .stats-brand__image
+
+    &__image {
+        width: 100%;
+    }
+}
+
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================

@@ -37,7 +37,6 @@
 .title_hero {
 }
 
-
 .block {
     position: relative;
     overflow: hidden;
@@ -50,7 +49,6 @@
             flex-direction: column;
         }
     }
-
     // .block__content
     &__content {
         flex: 0 1 rem(363);
@@ -60,14 +58,12 @@
             padding-bottom: rem(210);
         }
     }
-
     // .block__title
     &__title {
         &:not(:last-child) {
             margin-bottom: rem(16);
         }
     }
-
     // .block__text
     &__text {
         &:not(:last-child) {
@@ -75,7 +71,6 @@
         }
     }
     // .block__buttons
-
 	&__buttons {
         display: flex;
         gap: rem(8);
@@ -83,15 +78,11 @@
             flex-direction: column; 
         }
 	}
-
 	// .block__button
-
 	&__button {
 	}
-
     &__button {
     }
-
     // .block__img
     &__img {
         position: relative;

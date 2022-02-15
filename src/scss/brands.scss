@@ -6,30 +6,32 @@
     }
 
     // .brands__title
-
     &__title {
         text-align: center;
         @include adaptiveValue("font-size",36, 30);
         @include adaptiveValue("line-heigh",1.37,1);
         @include adaptiveValue("margin-bottom",80,25);
     }
-
     // .brands__list
-
     &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include adaptiveValue("column-gap",50,20);
-        row-gap: rem(20);
-        flex-wrap: wrap;
     }
+}
 
-    // .brands__item
+
+
+.brands-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adaptiveValue("column-gap",50,20);
+    row-gap: rem(20);
+    flex-wrap: wrap;
+
+    // .brands-list__item
     &__item {
     }
 
-    // .brands__link
+    // .brands-list__link
     &__link {
         svg {
             width: 100%;
