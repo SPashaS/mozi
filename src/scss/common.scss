@@ -30,9 +30,11 @@
     @include adaptiveValue("font-size",44,28);
     line-height: math.div(57,44);
     color: $blueColor;
+    margin-bottom: rem(16);
     span {
         color: $redColor;
     }
+    
 }
 .title_hero {
 }
