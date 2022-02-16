@@ -1,18 +1,15 @@
 .page {
-
     // .page__about-hero-block
-
     &__about-hero-block {
     }
-
     // .page__brands
-
     &__brands {
     }
-
     // .page__information
-
     &__information {
+    }
+    // .page__what-we-do
+    &__what-we-do {
     }
 }
 .about-hero-block {
@@ -179,7 +176,10 @@
     }
     // .block-rel__desc
     &__desc {
-        // flex: 0 1 50%;
+        flex: 0 1 rem(416);
+        @media (max-width:$tablet){
+            flex-basis: 100%;
+        }
     }
     // .block-rel__title
     &__title {
@@ -189,7 +189,10 @@
     }
     // .block-rel__image
     &__image {
-        // flex: 0 1 50%;
+        flex: 0 1 rem(560);
+        @media (max-width:$tablet){
+            flex-basis: 100%;
+        }
         img {
             width: 100%;
         }
@@ -205,31 +208,36 @@
     }
     // .block-rel__desc
     .block-rel__desc {
-        flex: 0 1 rem(416);
         @include adaptiveValue("padding-top",30,0,1120,992,1);
-        @media (max-width:$tablet){
-            flex-basis: 100%;
-        }
-    }
-    // .block-rel__title
-    .block-rel__title {
-    }
-    // .block-rel__text
-    .block-rel__text {
-    }
-    // .block-rel__image
-    .block-rel__image {
-        flex: 0 1 rem(560);
-        @media (max-width:$tablet){
-            flex-basis: 100%;
-        }
     }
 }
 
 
 //====================================================================================================
+.what-we-do {
+    @include adaptiveValue("padding-top",104,40);
+    @include adaptiveValue("padding-bottom",121,40);
+    // .what-we-do__container
+    &__container {
+    }
 
+    // .what-we-do__block
 
+    &__block {
+    }
+}
+.block-rel_what-we-do{
+    // .block-rel__body
+    .block-rel__body {
+        flex-direction: row-reverse;
+        @include adaptiveValue("padding-left", 13,0,1120,992,1);
+        @include adaptiveValue("padding-right",58,0,1120,992,1);
+    }
+    // .block-rel__desc
+    .block-rel__desc {
+        @include adaptiveValue("padding-top",100,10);
+    }
+}
 
 
 
