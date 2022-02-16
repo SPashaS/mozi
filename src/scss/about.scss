@@ -239,9 +239,78 @@
     }
 }
 
-
-
 //====================================================================================================
+.page {
+
+    // .page__about-hero-block
+
+    &__about-hero-block {
+
+        // .page__about-hero-block_2
+
+        &_2 {
+        }
+    }
+}
+.about-hero-block_2 {
+    @media (max-width:$tablet){
+        padding-bottom: rem(40);
+    }
+    .block {
+        
+        background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
+        // .block__content
+        &__content {
+            flex-basis: rem(416);
+            @include adaptiveValue("padding-top",165,60,1118,992,1);
+            @include adaptiveValue("padding-bottom",411,270);
+            // @media (max-width:$tablet){
+            //     padding-top: rem(60);
+            // }
+            @media (min-width:$tablet){
+                padding-bottom: rem(212);
+            }
+        }
+        // .block__text
+        &__text {
+            max-width: rem(390);
+            @media (max-width:$tablet){
+                max-width: 100%;
+            }
+        }
+
+        // .block__button
+    
+        &__button {
+            position: relative;
+            &::after{
+                position: absolute;
+                content:'';
+                background-image: url(../img/about/be-the-next.svg);
+                background-size: cover;
+                width: rem(211);
+                height: rem(58);
+                left: 50%;
+                bottom: -118%
+            }
+        }
+    
+        // .block__img
+        &__img {
+            img {
+                width: rem(591);
+                bottom: 17%;
+                left: auto;
+                right: 0;
+                @include adaptiveValue("width",591,300);
+                @media (max-width:$tablet){
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
 
 //====================================================================================================
 //====================================================================================================
