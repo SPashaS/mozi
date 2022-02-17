@@ -15,6 +15,10 @@
 	}
 }
 
+._icon-arrow:before {
+	content: "\e900";
+}
+
 ._icon-arrow-btn:before {
 	content: "\e901";
 }
@@ -27,18 +31,18 @@
 	content: "\e903";
 }
 
-._icon-left-arrow:before {
+._icon-linkedin:before {
 	content: "\e904";
 }
 
-._icon-linkedin:before {
+._icon-twitter:before {
 	content: "\e905";
 }
 
-._icon-right-arrow:before {
+._icon-time:before {
 	content: "\e906";
 }
 
-._icon-twitter:before {
+._icon-location:before {
 	content: "\e907";
 }

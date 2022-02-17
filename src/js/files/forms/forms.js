@@ -269,9 +269,9 @@ export function formRating() {
 
 			setRatingActiveWidth();
 
-			if (rating.classList.contains('rating_set')) {
-				setRating(rating);
-			}
+			// if (rating.classList.contains('rating_set')) {
+			// 	setRating(rating);
+			// }
 		}
 		// Инициализайция переменных
 		function initRatingVars(rating) {
