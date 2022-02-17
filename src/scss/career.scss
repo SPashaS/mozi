@@ -6,11 +6,14 @@
 
 //====================================================================================================
 .career {
-
     // .career__offer
     &__offer {
     }
+    // .career__life
+    &__life {
+    }
 }
+
 //====================================================================================================
 .career__hero-block {
     background: linear-gradient(253.65deg, #E3E7F6 -0.59%, rgba(227, 231, 246, 0) 98.74%);
@@ -75,7 +78,7 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
         // gap: rem(35);
         @include adaptiveValue("gap",35,15);
     }
@@ -99,14 +102,12 @@
     }
 
     // .card-offer-career__icon
-
     &__icon {
         width: rem(44);
         height: rem(44);
     }
 
     // .card-offer-career__title
-
     &__title {
         color: #3A3A3C;
         font-size: rem(28);
@@ -114,13 +115,61 @@
     }
 
     // .card-offer-career__text
-
     &__text {
     }
 }
-
-
 //====================================================================================================
+
+.life-career {
+    background: linear-gradient(270.76deg, #E3E7F6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
+    @include adaptiveValue("padding-top",65,20);
+    @include adaptiveValue("padding-bottom",51,20);
+    // .life-career__container
+    &__container {
+    }
+
+    // .life-career__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: rem(30);
+        row-gap: rem(3);
+        @media (max-width:$mobile){
+            grid-template-columns: 1fr;
+            @include adaptiveValue("gap",30,15);
+        }
+    }
+
+    // .life-career__desc
+    &__desc {
+        max-width: rem(323);
+        @include adaptiveValue("padding-top",98,20);
+        @include adaptiveValue("padding-bottom",127,20);
+        @media (max-width:$mobile){
+            max-width: 100%;
+        }
+    }
+
+    // .life-career__title
+    &__title {
+    }
+
+    // .life-career__text
+    &__text {
+    }
+
+    // .life-career__img
+    &__img {
+        &:last-child {
+            align-self: flex-end;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
 //====================================================================================================
 
 //====================================================================================================
