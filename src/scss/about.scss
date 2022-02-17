@@ -12,38 +12,42 @@
     &__what-we-do {
     }
 }
-.about-hero-block {
-    .block {
-        background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
-        // .block__content
+
+
+
+.about__hero-block {
+    background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
+    .hero-block {
+        // .hero-block__content
         &__content {
-            flex-basis: rem(447);
-            @include adaptiveValue("padding-top",360,300,1118,992,1);
-            @include adaptiveValue("padding-bottom",596,320);
-            @media (max-width:$tablet){
-                padding-top: rem(120);
-            }
-            @media (min-width:$tablet){
-                padding-bottom: rem(212);
+            flex: 0 1 rem(397);
+            @include adaptiveValue("padding-top",289,100);
+            @include adaptiveValue("padding-bottom",212,340,992,700,1);
+            @media (max-width: 700px){
+                flex-basis: 100%;
             }
         }
-        // .block__text
+        // .hero-block__title
+        &__title {
+        }
+        // .hero-block__text
         &__text {
-            max-width: rem(390);
-            @media (max-width:$tablet){
-                max-width: 100%;
-            }
+            
         }
-        // .block__img
+        // .hero-block__button
+        &__button {
+        }
+        // .hero-block__img
         &__img {
+            @include adaptiveValue("width",638,310);
+            right: 0;
             img {
-                width: rem(638);
                 bottom: 2%;
-                @include adaptiveValue("width",638,330);
             }
         }
     }
 }
+
 
 .brands {
     // .brands__container
@@ -279,6 +283,7 @@
             }
         }
 
+        
         // .block__button
     
         &__button {
@@ -313,6 +318,53 @@
 
 
 //====================================================================================================
+.about__hero-block_2 {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    // @media (max-width:$tablet){
+    //     padding-bottom: rem(40);
+    // }
+    .hero-block {
+        // .hero-block__content
+        &__content {
+            flex: 0 1 rem(480);
+            @include adaptiveValue("padding-left",64,0,1120,992,1);
+            @include adaptiveValue("padding-top",155,50);
+            @include adaptiveValue("padding-bottom",212,340,992,700,1);
+            // @media (max-width: 700px){
+            //     flex-basis: 100%;
+            // }
+        }
+        // .hero-block__title
+        &__title {
+        }
+        // .hero-block__text
+        &__text {
+            
+        }
+        // .hero-block__button
+        &__button {
+            position: relative;
+            &::after{
+                position: absolute;
+                content:'';
+                background-image: url(../img/about/be-the-next.svg);
+                background-size: cover;
+                width: rem(211);
+                height: rem(58);
+                left: 50%;
+                bottom: -118%
+            }
+        }
+        // .hero-block__img
+        &__img {
+            @include adaptiveValue("width",591,310);
+            right: 0;
+            img {
+                @include adaptiveValue("bottom",157,30,1150,800,1);
+            }
+        }
+    }
+}
 //====================================================================================================
 
 //====================================================================================================
