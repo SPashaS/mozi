@@ -1,0 +1,199 @@
+
+
+//====================================================================================================
+.contact__hero-block {
+    background: linear-gradient(253.65deg, #E3E7F6 -0.59%, rgba(227, 231, 246, 0) 98.74%);
+    .hero-block {
+        // .hero-block__content
+        &__content {
+            flex: 0 1 rem(502);
+            @include adaptiveValue("padding-top",195,100);
+            @include adaptiveValue("padding-bottom",139,230);
+            @media (max-width:$tablet){
+                padding-bottom: rem(227);
+            }
+            @media (max-width: 755px){
+                flex-basis: 100%;
+            }
+        }
+        // .hero-block__title
+        &__title {
+            @include adaptiveValue("margin-bottom",40, 25);
+        }
+        // .hero-block__text
+        &__text {
+            
+        }
+        // .hero-block__button
+        &__button {
+        }
+        // .hero-block__img
+        &__img {
+            @include adaptiveValue("width",661,310);
+            right: 0;
+        }
+    }
+}
+//====================================================================================================
+.contact {
+    // .contact__form
+    &__form {
+        @include adaptiveValue("padding-top",102,30);
+        @include adaptiveValue("padding-bottom",138,30);
+    }
+}
+//====================================================================================================
+.form-contact {
+
+    // .form-contact__container
+    &__container {
+        display: flex;
+        gap: rem(30);
+        @media (max-width:$tablet){
+            flex-wrap: wrap-reverse;
+        }
+    }
+
+    // .form-contact__form
+    &__form {
+        flex: 0 1 50%;
+        @media (max-width:$tablet){
+            flex: 0 1 100%;
+        }
+    }
+
+    // .form-contact__address
+    &__address {
+        flex: 0 1 50%;
+        @media (max-width:$tablet){
+            flex: 0 1 100%;
+        }
+    }
+    // .form-contact__address-list
+
+	&__address-list {
+        max-width: rem(363);
+        @include adaptiveValue("padding-top",116,50,1120,992,1);
+        @include adaptiveValue("padding-left",93,50,1120,992,1);
+        @media (max-width:$tablet){
+            max-width: 100%;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+            column-gap: rem(10);
+            @include adaptiveValue("padding-left",30,0);
+        }
+	}
+}
+//====================================================================================================
+.form {
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    @include adaptiveValue("padding",40,10);
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    // .form__item
+    &__item {
+        
+    }
+    // .form__label
+    &__label {
+        display: block;
+        line-height: math.div(24,16);
+        color: #8F90A6;
+        margin-bottom: rem(6);
+        ._form-error & {
+            color: $redColor;
+        }
+    }
+
+    // .form__input
+    &__input {
+        border: 1px solid #E3E7F6;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: #fff;
+        padding: rem(20) rem(32);
+        width: 100%;
+        color: inherit;
+        &:focus {
+            border: 1px solid $blueColor;
+            outline: 1px solid $blueColor;
+        }
+        ._form-error & {
+            border: 1px solid $redColor;
+            outline: 1px solid $redColor;
+        }
+    }
+    // .form__textarea
+    &__textarea {
+        resize: none;
+        height: rem(148);
+    }
+
+    // .form__footer
+    &__footer {
+    }
+
+    // .form__button
+    &__button {
+    }
+}
+//====================================================================================================
+.address-item {
+    &:not(:last-child) {
+        @include adaptiveValue("margin-bottom",72,30);
+    }
+    // .address-item__header
+    &__header {
+        display: inline-flex;
+        gap: rem(20);
+        img {
+            flex: 0 0 rem(40);
+        }
+        margin-bottom: rem(25);
+    }
+
+    // .address-item__country
+    &__country {
+        letter-spacing: 0.005em;
+        font-size: rem(18);
+        line-height: math.div(27,18);
+        color: #000;
+        font-weight: 700;
+    }
+
+    // .address-item__text
+
+    &__text {
+    }
+}
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================

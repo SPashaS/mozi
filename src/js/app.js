@@ -75,10 +75,10 @@ flsFunctions.showMore();
 import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы: добавление классов, работа с placeholder. */
-// flsForms.formFieldsInit();
+flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-// flsForms.formSubmit(true);
+flsForms.formSubmit(true);
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();

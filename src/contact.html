@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Contact"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page__contact contact">
+				<section class="contact__hero-block hero-block">
+					<div class="hero-block__container">
+						<div class="hero-block__content">
+							<h1 class="hero-block__title title">Connect with us</h1>
+							<p class="hero-block__text">
+								We’d love to hear from you. Fill out this form and we’ll get back to you. For job related queries, click on the button below.
+							</p>
+							<a href="#" class="hero-block__button button">View open roles</a>
+						</div>
+						<div class="hero-block__img">
+							<img src="@img/contact/hero.svg" alt="Illustration">
+						</div>
+					</div>
+				</section>
+				<section class="contact__form form-contact">
+					<div class="form-contact__container">
+						<div class="form-contact__form">
+							<form action="#" class="form">
+								<div class="form__item">
+									<label for="name" class="form__label">Name*</label>
+									<input id="name" autocomplete="off" type="text" name="form[]" data-error="" data-required class="form__input">
+								</div>
+								<div class="form__item">
+									<label for="email" class="form__label">Email*</label>
+									<input id="email" autocomplete="off" type="email" name="form[]" data-error="" data-required class="form__input">
+								</div>
+								<div class="form__item">
+									<label for="subject" class="form__label">Subject</label>
+									<input id="subject" autocomplete="off" type="text" name="form[]" data-error="" class="form__input">
+								</div>
+								<div class="form__item">
+									<label for="textarea" class="form__label">Message*</label>
+									<textarea id="textarea" maxlength="100" autocomplete="off" name="form[]"  data-error="" data-required class="form__input form__textarea"></textarea>
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__button button button--bg-red">Send</button>
+								</div>
+							</form>
+						</div>
+						<div class="form-contact__address">
+							<ul class="form-contact__address-list">
+								<li class="address-item">
+									<div class="address-item__header">
+										<img src="@img/contact/uk-flag.png" alt="UK">
+										<span class="address-item__country">London</span>
+									</div>
+									<div class="address-item__text">
+										Mozi Limited<br>
+										3 Warren Yard, Wolverton Mill<br>
+										Milton Keynes England<br>
+										UK – MK12 5NW
+									</div>
+								</li>
+								<li class="address-item">
+									<div class="address-item__header">
+										<img src="@img/contact/indian-flag.png" alt="India">
+										<span class="address-item__country">Bengaluru </span>
+									</div>
+									<div class="address-item__text">
+										Mozi Technologies Pvt Ltd<br>
+										First Floor, Sahya Building, Govt.<br>
+										Cyberpark, Nellikode P.O.<br>
+										Kozhikode, Kerala, India – 673016
+									</div>
+								</li>
+								<li class="address-item">
+									<div class="address-item__header">
+										<img src="@img/contact/indian-flag.png" alt="India">
+										<span class="address-item__country">Bengaluru </span>
+									</div>
+									<div class="address-item__text">
+										Mozi Technologies Pvt Ltd<br>
+										Brigade IRV Centre<br>
+										Nallurahalli Whitefield<br>
+										Bengaluru, Karnataka<br>
+										India – 560066<br>
+										<br>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</section>
+					
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
