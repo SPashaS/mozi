@@ -19,6 +19,9 @@
     &__recommend {
         @include adaptiveValue("padding-top",56,30);
     }
+    // .career__question
+    &__question {
+    }
 }
 
 //====================================================================================================
@@ -432,10 +435,34 @@
         padding-right: rem(25);
     }
 }
-
-
-
 //====================================================================================================
+.question-career {
+    @include adaptiveValue("padding-top",112,30);
+    @include adaptiveValue("padding-bottom",112,30);
+    background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+    // .question-career__container
+    &__container {
+        text-align: center;
+    }
+
+    // .question-career__title
+    &__title {
+        
+    }
+
+    // .question-career__subtitle
+    &__subtitle {
+    }
+
+    // .question-career__button
+
+    &__button {
+    }
+}
+
+
+
+
 //====================================================================================================
 
 

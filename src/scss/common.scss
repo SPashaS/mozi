@@ -34,7 +34,9 @@
     span {
         color: $redColor;
     }
-    
+}
+.subtitle {
+    @include adaptiveValue("margin-bottom",40,25);
 }
 
 
