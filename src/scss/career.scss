@@ -2,9 +2,6 @@
     // .page__career
     &__career {
     }
-    // .career__join
-    &__join {
-    }
 }
 
 //====================================================================================================
@@ -160,15 +157,12 @@
             max-width: 100%;
         }
     }
-
     // .life-career__title
     &__title {
     }
-
     // .life-career__text
     &__text {
     }
-
     // .life-career__img
     &__img {
         &:last-child {
@@ -182,8 +176,6 @@
 }
 
 //====================================================================================================
-
-
 .recommend-career {
     background: #F7F8FF;
     box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
@@ -223,6 +215,7 @@
         gap: rem(5);
         @media (max-width:$tablet){
             flex-basis: 100%;
+            display: flex;
         }
     }
     // .recommend-career__icon
@@ -246,19 +239,16 @@
     }
 
     // .recommend-career__glassdor
-
     &__glassdor {
         width: rem(180);
         height: rem(36);
     }
-
     // .recommend-career__link
     &__link {
         display: inline-flex;
         flex-direction: row-reverse;
         align-items: center;
         color: #424B5A;
-        
         gap: rem(7);
         span {
             text-decoration: underline;
@@ -268,13 +258,14 @@
         &::before{
             font-size: rem(14);
         }
+        &:hover{
+            span {
+                text-decoration: none;
+            }
+        }
     }
 }
-
-
 //====================================================================================================
-
-
 
 .rating {
     display: flex;
@@ -320,7 +311,6 @@
     }
 }
 
-
 //====================================================================================================
 
 .join-career {
@@ -329,27 +319,19 @@
     // .join-career__container
     &__container {
     }
-
     // .join-career__title
-
     &__title {
         text-align: center;
     }
-
     // .join-career__subtitle
     &__subtitle {
         text-align: center;
         @include adaptiveValue("margin-bottom",100,30);
     }
-
     // .join-career__body
-
     &__body {
-        
     }
-
     // .join-career__list
-
     &__list {
         @include adaptiveValue("margin-bottom",68,30);
         display: grid;
@@ -358,21 +340,16 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
     }
-
     // .join-career__item
-
     &__item {
     }
-    
 	// .join-career__footer
 	&__footer {
         display: flex;
         justify-content: center;
 	}
-
     //.join-career__button-more
     &__button {
-
     }
 }
 
@@ -394,7 +371,9 @@
     &__info {
         flex: 1 1 auto;
         @media (max-width:$tablet){
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -403,33 +382,30 @@
         @include adaptiveValue("font-size",28,24);
         line-height: math.div(27,28);
         margin-bottom: rem(24);
+        @media (max-width:$tablet){
+            flex: 1 1 100%;
+            text-align: center;
+        }
     }
-
     // .item-join-career__desc
     &__desc {
         display: inline-flex;
         gap: rem(25);
     }
-
     // .item-join-career__desc-item
-
     &__desc-item {
         display: flex;
         align-items: center;
         gap: rem(6);
     }
-
     // .item-join-career__details
-
     &__details {
         flex: 0 0 rem(150);
         @media (max-width:$tablet){
             flex-basis: auto;
         }
     }
-
     // .item-join-career__button
-
     &__button {
         padding-left: rem(25);
         padding-right: rem(25);
@@ -444,37 +420,14 @@
     &__container {
         text-align: center;
     }
-
     // .question-career__title
     &__title {
         
     }
-
     // .question-career__subtitle
     &__subtitle {
     }
-
     // .question-career__button
-
     &__button {
     }
 }
-
-
-
-
-//====================================================================================================
-
-
-
-//====================================================================================================
-//====================================================================================================
-
-//====================================================================================================
-//====================================================================================================
-
-//====================================================================================================
-//====================================================================================================
-
-//====================================================================================================
-//====================================================================================================

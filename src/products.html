@@ -3,25 +3,25 @@
 	@@include('html/_head.htm',{
 	"title":"Products"
 	})
-	<body>
+	<body data-id-page="products">
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page page__products products">
-				<section class="products__hero-block prod-hero-block block">
-					<div class="block__container">
-						<div class="block__content">
-							<h1 class="block__title title">Tools that transform how businesses work</h1>
-							<p class="block__text">We help manage businesses better with our applications, plugins, 
+				<section class="products__hero-block hero-block">
+					<div class="hero-block__container">
+						<div class="hero-block__content">
+							<h1 class="hero-block__title title">Tools that transform how businesses work</h1>
+							<p class="hero-block__text">We help manage businesses better with our applications, plugins, 
 								extensions and offer productive experiences for teams and customers alike.</p>
 						</div>
-						<div class="block__img">
+						<div class="hero-block__img">
 							<img src="@img/products/hero.svg" alt="Illustration">
 						</div>
 					</div>
 				</section>
 				<section class="products__info info-products">
 					<div class="info-products__container">
-						<div class="info-products__item info-products-item info-products-item_1">
+						<div id="cookieyes" class="info-products__item info-products-item info-products-item_1">
 							<div class="info-products-item__decs">
 								<img class="info-products-item__logo" src="@img/home/line-products/Cookieyes.svg" alt="Cookieyes">
 								<p class="info-products-item__text">
@@ -36,7 +36,7 @@
 							</div>
 						</div>
 
-						<div class="info-products__item info-products-item info-products-item_2">
+						<div id="webtoffee" class="info-products__item info-products-item info-products-item_2">
 							<div class="info-products-item__image">
 								<img src="@img/products/item/image2.png" alt="Image">
 							</div>

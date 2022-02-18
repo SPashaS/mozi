@@ -3,21 +3,23 @@
 	@@include('html/_head.htm',{
 	"title":"Home"
 	})
-	<body>
+	<body data-id-page="home">
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
-			<main class="page page_home">
-				<section class="home__hero-block hero-block block">
-					<div class="block__container">
-						<div class="block__content">
-							<h1 class="block__title title">We build products to simplify work for businesses</h1>
-							<p class="block__text">Our next-gen products empower businesses to implement agility and accelerate growth.</p>
-							<div class="block__buttons">
-								<a href="#" class="block__button button button--bg-red">Learn more</a>
-								<a href="#" class="block__button button">Work with us</a>
+			<main class="page page__home home">
+				<section class="home__hero-block hero-block">
+					<div class="hero-block__container">
+						<div class="hero-block__content">
+							<h1 class="hero-block__title title">We build products to simplify work for businesses</h1>
+							<p class="hero-block__text">
+								Our next-gen products empower businesses to implement agility and accelerate growth.
+							</p>
+							<div class="hero-block__buttons">
+								<a href="#" class="hero-block__button button button--bg-red">Learn more</a>
+								<a href="#" class="hero-block__button button">Work with us</a>
 							</div>
 						</div>
-						<div class="block__img">
+						<div class="hero-block__img">
 							<img src="@img/home/hero.svg" alt="Illustration">
 						</div>
 					</div>
@@ -67,18 +69,16 @@
 						</div>
 					</div>
 				</section>
-				<section class="home__info-block info-block block">
-					<div class="block__container">
-						<div class="block__content">
-							<h2 class="block__title title">Creators of award-info products</h2>
-							<p class="block__text">Our products are loved by customers and recommended by leading industry experts.</p>
+				<section class="home-info__hero-block hero-block">
+					<div class="hero-block__container">
+						<div class="hero-block__content">
+							<h2 class="hero-block__title title">Creators of award-info products</h2>
+							<p class="hero-block__text">Our products are loved by customers and recommended by leading industry experts.</p>
 						</div>
-						<div class="block__img">
+						<div class="hero-block__img">
 							<img src="@img/home/info/image.png" alt="Illustration">
 						</div>
 					</div>
-				</section>
-
 				</section>
 				<section class="home__innovation innovation">
 					<div class="innovation__container">
@@ -112,20 +112,20 @@
 								</div>
 							</div>
 							<div class="innovation__slider-nav">
-								<button class="innovation__slider-item innovation__slider-item_prev _icon-left-arrow"></button>
-								<button class="innovation__slider-item innovation__slider-item_next _icon-right-arrow"></button>
+								<button class="innovation__slider-item innovation__slider-item_prev _icon-arrow"></button>
+								<button class="innovation__slider-item innovation__slider-item_next _icon-arrow-right"></button>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="home__join-block join-block block">
-					<div class="block__container">
-						<div class="block__content">
-							<h2 class="block__title title">Let's build the next big thing!</h2>
-							<p class="block__text">Looking to achieve great things? You’ve come to the right place.</p>
-							<a href="#" class="block__button button">Join the team</a>
+				<section class="home-join__hero-block hero-block">
+					<div class="hero-block__container">
+						<div class="hero-block__content">
+							<h2 class="hero-block__title title">Let's build the next big thing!</h2>
+							<p class="hero-block__text">Looking to achieve great things? You’ve come to the right place.</p>
+							<a href="#" class="hero-block__button button">Join the team</a>
 						</div>
-						<div class="block__img">
+						<div class="hero-block__img">
 							<img src="@img/home/hero2.svg" alt="Illustration">
 						</div>
 					</div>

@@ -87,7 +87,7 @@ flsForms.formSubmit(true);
 // flsForms.formViewpass();
 
 /* Модуль звездного рейтинга */
-flsForms.formRating();
+// flsForms.formRating();
 
 /* Модуль работы с select. */
 // import './libs/select.js'

@@ -1,9 +1,8 @@
 //====================================================================================================
 .home {
-    // .home__hero
-    &__hero {
+    // .home__hero-block
+    &__hero-block {
     }
-
     // .home__info
     &__info {
     }
@@ -13,9 +12,46 @@
     // .home__innovation
     &__innovation {
     }
-
     // .home__join-block
     &__join-block {
+    }
+}
+
+//====================================================================================================
+.home__hero-block {
+    background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+    .hero-block {
+        // .hero-block__content
+        &__content {
+            flex: 0 1 rem(570);
+            @include adaptiveValue("padding-top",229,100);
+            @include adaptiveValue("padding-bottom",210,300);
+            @media (max-width:$tablet){
+                @include adaptiveValue("padding-bottom",400,340);
+            }
+            @media (max-width: 755px){
+                flex-basis: 100%;
+            }
+        }
+        // .hero-block__title
+        &__title {
+            @include adaptiveValue("margin-bottom",32, 25);
+        }
+        // .hero-block__text
+        &__text {
+            
+        }
+        // .hero-block__button
+        &__button {
+        }
+        // .hero-block__img
+        &__img {
+            @include adaptiveValue("width",847,410);
+            right: -14%;
+            @media (max-width:$tablet){
+                right: -12%;
+            }
+        }
     }
 }
 
@@ -126,7 +162,7 @@
         width: rem(140);
         font-size: rem(14);
         line-height: math.div(21,14);
-        padding: rem(12) rem(16);
+        padding: rem(12) rem(13);
         margin-left: rem(5);
         display: flex;
         align-items: center;
@@ -168,38 +204,54 @@
 }
 
 //====================================================================================================
-
-
-.info-block {
-    .block {
-        background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
-
-        // .block__content
+.home-info__hero-block {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    .hero-block {
+        // .hero-block__content
         &__content {
             flex: 0 1 rem(430);
-            @include adaptiveValue("padding-top",229,50);
-            @include adaptiveValue("padding-bottom",596,350);
-            @media (min-width:$tablet){
-                padding-bottom: rem(210);
+            @include adaptiveValue("padding-top",262,100);
+            @include adaptiveValue("padding-bottom",328,300);
+            @media (max-width:$tablet){
+                @include adaptiveValue("padding-top",100,40);
+                
+                @include adaptiveValue("padding-bottom",400,340);
+            }
+            @media (max-width: 650px){
+                flex-basis: 100%;
             }
         }
-    
-        // .block__img
+        // .hero-block__title
+        &__title {
+            @include adaptiveValue("font-size",44,24);
+            line-height: math.div(57,44);
+            @include adaptiveValue("margin-bottom",32, 25);
+        }
+        // .hero-block__text
+        &__text {
+            font-size: rem(16);
+            line-height: math.div(27,16);
+        }
+        // .hero-block__button
+        &__button {
+        }
+        // .hero-block__img
         &__img {
+            @include adaptiveValue("width",559,300);
+            right: -4%;
+            @media (max-width:1255px) {
+                right: 3%;
+            }
             img {
-                width: rem(559);
-                @include adaptiveValue("width",559,300);
-                bottom: 50%;
-                transform: translateY(50%);
-                left: -1%;
+                bottom: 16%;
                 @media (max-width:$tablet){
-                    left: 50%;
-                    transform: translate(-50%, -10%);
+                    bottom: 3%;
                 }
             }
         }
     }
 }
+
 //====================================================================================================
 .info {
     background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
@@ -343,43 +395,43 @@
 }
 //====================================================================================================
 
-.join-block {
-    .block {
-        background: linear-gradient(335.73deg, #E3E7F6 12.46%, rgba(227, 231, 246, 0) 84.19%);
-
-        // .block__content
+//====================================================================================================
+.home-join__hero-block {
+    background: linear-gradient(335.73deg, #E3E7F6 12.46%, rgba(227, 231, 246, 0) 84.19%);
+    .hero-block {
+        // .hero-block__content
         &__content {
-            flex: 0 1 rem(363);
-            @include adaptiveValue("padding-top",229,50);
-            @include adaptiveValue("padding-bottom",596,350);
-            @media (min-width:$tablet){
-                padding-bottom: rem(210);
+            flex: 0 1 rem(380);
+            @include adaptiveValue("padding-top",217,35);
+            @include adaptiveValue("padding-bottom",242,300);
+            @media (max-width:$tablet){
+                @include adaptiveValue("padding-bottom",400,340);
+            }
+            @media (max-width: 755px){
+                flex-basis: 100%;
             }
         }
-    
-        // .block__img
+        // .hero-block__title
+        &__title {
+            @include adaptiveValue("margin-bottom",32, 25);
+        }
+        // .hero-block__text
+        &__text {
+        }
+        // .hero-block__button
+        &__button {
+        }
+        // .hero-block__img
         &__img {
+            @include adaptiveValue("width",523,310);
+            right: 1%;
+            @media (max-width:$tablet){
+                right: 3%;
+            }
             img {
-                width: rem(523);
-                @include adaptiveValue("width",523,300);
-                bottom: 50%;
-                transform: translateY(50%);
-                left: -1%;
-                @media (max-width:$tablet){
-                    left: 50%;
-                    transform: translate(-50%, -10%);
-                }
+                // bottom: 12%;
+                @include adaptiveValue("bottom",110,30);
             }
         }
     }
 }
-
-
-
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
-//====================================================================================================
