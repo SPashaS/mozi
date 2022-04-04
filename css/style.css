@@ -784,14 +784,16 @@ h6 {
 }
 .list-footer__social {
   padding-top: 0.3125rem;
-  display: flex;
-  gap: 0.3125rem;
-  margin: 0 -0.3125rem;
 }
 @media (max-width: 29.99875em) {
   .list-footer__social {
     padding-top: 0;
   }
+}
+.list-footer__social-list {
+  display: flex;
+  gap: 0.3125rem;
+  margin: 0 -0.3125rem;
 }
 .list-footer__social-link {
   display: inline-block;
